@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+
+		<!-- jQuery library -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- JavaScript library -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Latest compiled JavaScript library -->
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div
+			class="container mt-5 d-flex align-items-center justify-content-center"
+		>
+			<div class="container-fluid">
+				<form id="userForm">
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="fname">First name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="fname"
+								placeholder="First name"
+							/>
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="lname">Last name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="lname"
+								placeholder="Last name"
+							/>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="age">Age</label>
+							<input
+								type="text"
+								class="form-control"
+								id="age"
+								placeholder="Age"
+							/>
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="pincode">Pincode</label>
+							<input
+								type="text"
+								class="form-control"
+								id="pincode"
+								placeholder="Pincode"
+							/>
+						</div>
+					</div>
+					<button class="btn btn-primary" type="submit" onclick="saveData()">
+						Submit form
+					</button>
+				</form>
+			</div>
+		</div>
+		<div
+			class="container d-flex justify-content-center align-items-center mt-5"
+		>
+			<table
+				class="container-fluid overflow-sm-auto table table-dark table-bordered table-hover col-md-10 col-sm-8"
+			>
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col">First name</th>
+						<th scope="col">Last name</th>
+						<th scope="col">Age</th>
+						<th scope="col">Pincode</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td scope="row">Mark</td>
+						<td scope="row">Otto</td>
+						<td scope="row">21</td>
+						<td scope="row">146131</td>
+						<td scope="row">
+							<button type="button" class="btn btn-success">Edit</button>
+							<button type="button" class="btn btn-danger">Delete</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script src="JS/storeData.js"></script>
+</html>
